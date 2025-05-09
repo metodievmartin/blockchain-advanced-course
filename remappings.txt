@@ -5,3 +5,4 @@ halmos-cheatcodes/=lib/openzeppelin-contracts/lib/halmos-cheatcodes/src/
 openzeppelin-contracts/=lib/openzeppelin-contracts/
 
 01-foundry/=src/01-foundry/
+@/=src/
