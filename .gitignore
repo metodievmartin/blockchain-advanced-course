@@ -17,3 +17,13 @@ node_modules
 
 # IDE
 .idea/
+
+# Ignore Hardhat dependency cache
+.deps/
+
+# OS
+.DS_Store
+
+# Remix IDE
+artifacts/
+debug/
