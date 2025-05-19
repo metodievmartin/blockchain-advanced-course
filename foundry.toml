@@ -7,3 +7,6 @@ libs = ["lib"]
 # Compiler Settings
 solc = '0.8.28'                # Solidity compiler version
 optimizer = true               # Enable optimizer
+optimizer_runs = 222
+via_ir = true                  # Enable viaIR
+extra_output = ["ir", "irOptimized"]
