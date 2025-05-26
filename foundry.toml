@@ -6,7 +6,19 @@ libs = ["lib"]
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 # Compiler Settings
 solc = '0.8.28'                # Solidity compiler version
+evm_version = "paris"
 optimizer = true               # Enable optimizer
-optimizer_runs = 222
+optimizer_runs = 200
 via_ir = true                  # Enable viaIR
-extra_output = ["ir", "irOptimized"]
+extra_output = ["ir", "irOptimized", "storageLayout"]
+ast = true
+ffi = true
+build_info = true
+build_info_path = "out/build-info"
+
+[rpc_endpoints]
+anvil = "http://localhost:8545"
+sepolia = "${SEPOLIA_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
