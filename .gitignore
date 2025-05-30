@@ -26,4 +26,8 @@ node_modules
 
 # Remix IDE
 artifacts/
+
+# Ignore all artifacts and build-info directories recursively
+**/artifacts/
+**/build-info/
 debug/
